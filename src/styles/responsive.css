@@ -68,19 +68,29 @@
     }
 }
 
-/* Mobile (480px) */
-@media (max-width: 480px) {
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
+/* ── MOBILE (600px) ── */
+/* This breakpoint catches most modern smartphones (375–430px CSS width)  */
+/* before the old 480px cutoff, preventing text from being "picotado"     */
+@media (max-width: 600px) {
 
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-    }
-
+    /* ── HERO ── */
     .hero {
-        padding-top: calc(var(--nav-height) + 2.5rem);
+        min-height: auto;
+        padding-top: calc(var(--nav-height) + 2rem);
         padding-bottom: var(--space-xl);
+    }
+
+    .hero-headline {
+        font-size: clamp(1.8rem, 7.5vw, 2.8rem);
+    }
+
+    .hero-sub {
+        font-size: var(--fs-sm);
+        max-width: 100%;
+    }
+
+    .hero-sub br {
+        display: none;
     }
 
     .hero-actions {
@@ -94,36 +104,131 @@
         width: 100%;
     }
 
-    .card {
-        padding: 28px 24px;
+    /* ── SECTIONS ── */
+    .section {
+        padding: clamp(3rem, 8vw, 5rem) 0;
     }
 
+    .section-title {
+        font-size: clamp(1.4rem, 5.5vw, 1.8rem);
+    }
+
+    .section-desc {
+        font-size: var(--fs-sm);
+    }
+
+    /* ── SERVICES GRID → 1 COLUMN ── */
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-sm);
+    }
+
+    /* ── CARDS ── */
+    .card {
+        padding: 24px 20px;
+    }
+
+    .card-title {
+        font-size: var(--fs-base);
+    }
+
+    .card-desc {
+        font-size: var(--fs-sm);
+        line-height: 1.5;
+    }
+
+    .icon-box {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+        margin-bottom: var(--space-sm);
+    }
+
+    /* ── PROCESS ── */
     .process-step {
         padding: var(--space-lg) var(--space-md);
     }
 
+    .process-title {
+        font-size: var(--fs-base);
+    }
+
+    /* ── PORTFOLIO → 1 COLUMN ── */
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+
+    .portfolio-preview {
+        aspect-ratio: 16 / 9;
+    }
+
+    .portfolio-placeholder-icon {
+        font-size: 2.5rem;
+    }
+
+    .portfolio-info {
+        padding: var(--space-sm) var(--space-md);
+    }
+
+    /* ── PROBLEM STAT ── */
+    .problem-stat {
+        padding: var(--space-lg);
+    }
+
+    .problem-stat-number {
+        font-size: clamp(3rem, 12vw, 5rem);
+    }
+
+    /* ── PRICING ── */
     .pricing-card {
         padding: var(--space-lg);
     }
 
     .pricing-value {
-        font-size: 3rem;
+        font-size: clamp(2.5rem, 10vw, 3.5rem);
     }
 
     .pricing-value--sm {
-        font-size: 2rem;
+        font-size: clamp(1.6rem, 6vw, 2.2rem);
     }
 
-    .section-title {
-        font-size: var(--fs-xl);
+    /* ── CTA ── */
+    .cta-headline {
+        font-size: clamp(1.5rem, 6vw, 2rem);
     }
 
+    .cta-desc {
+        font-size: var(--fs-sm);
+    }
+
+    .cta-btn {
+        font-size: var(--fs-sm);
+        padding: 14px 28px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* ── TICKER ── */
     .ticker-item {
-        font-size: 0.8rem;
-        padding: 0 1.2rem;
+        font-size: 0.75rem;
+        padding: 0 1rem;
     }
 
-    /* Checkout responsive */
+    /* ── FOOTER ── */
+    .footer {
+        padding: var(--space-xl) 0 var(--space-lg);
+    }
+
+    .footer-inner {
+        gap: var(--space-lg);
+    }
+
+    .footer-logo-img {
+        height: 60px;
+    }
+
+    /* ── CHECKOUT ── */
     .checkout-page {
         padding: var(--space-lg);
     }
@@ -132,7 +237,7 @@
         padding: var(--space-lg);
     }
 
-    /* Thank-you responsive */
+    /* ── THANK-YOU ── */
     .thankyou-page {
         padding: var(--space-lg);
     }
@@ -142,7 +247,35 @@
     }
 }
 
-/* Prefers reduced motion */
+/* ── SMALL MOBILE (380px) ── */
+/* For very small screens like iPhone SE                                  */
+@media (max-width: 380px) {
+    .hero-headline {
+        font-size: clamp(1.6rem, 7vw, 2.2rem);
+    }
+
+    .card {
+        padding: 20px 16px;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .pricing-value {
+        font-size: 2.2rem;
+    }
+
+    .pricing-card {
+        padding: var(--space-md);
+    }
+
+    .cta-section {
+        padding: var(--space-xl) 0;
+    }
+}
+
+/* ── PREFERS REDUCED MOTION ── */
 @media (prefers-reduced-motion: reduce) {
     .reveal {
         opacity: 1;

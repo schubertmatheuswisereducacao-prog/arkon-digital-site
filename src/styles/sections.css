@@ -142,7 +142,7 @@
 .portfolio-card {
     border: 1px solid var(--border);
     border-radius: var(--radius-lg);
-    overflow: hidden;
+    overflow: visible;
     transition: border-color var(--duration-normal),
         transform var(--duration-normal) var(--ease-out);
 }
@@ -159,7 +159,8 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
 }
 
 .portfolio-preview::before {
