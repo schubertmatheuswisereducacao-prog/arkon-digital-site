@@ -1,3 +1,14 @@
+/* ── CSS Imports (order matters for cascade) ── */
+import '../styles/variables.css';
+import '../styles/reset.css';
+import '../styles/base.css';
+import '../styles/animations.css';
+import '../styles/components.css';
+import '../styles/nav.css';
+import '../styles/hero.css';
+import '../styles/sections.css';
+import '../styles/responsive.css';
+
 /* ── MAIN.JS — Homepage interactions ── */
 
 document.addEventListener('DOMContentLoaded', () => {

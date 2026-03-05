@@ -1,3 +1,11 @@
+/* ── CSS Imports (order matters for cascade) ── */
+import '../styles/variables.css';
+import '../styles/reset.css';
+import '../styles/base.css';
+import '../styles/components.css';
+import '../styles/checkout.css';
+import '../styles/responsive.css';
+
 /* ── CHECKOUT.JS — Form validation & Stripe redirect ── */
 
 const STRIPE_LINK = 'https://buy.stripe.com/9B65kFdwy3VvgUhgOg8N200';

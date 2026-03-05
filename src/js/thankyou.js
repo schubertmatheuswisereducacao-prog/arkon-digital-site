@@ -1,3 +1,11 @@
+/* ── CSS Imports (order matters for cascade) ── */
+import '../styles/variables.css';
+import '../styles/reset.css';
+import '../styles/base.css';
+import '../styles/components.css';
+import '../styles/thankyou.css';
+import '../styles/responsive.css';
+
 /* ── THANKYOU.JS — Confetti, Terms modal, & checkbox logic ── */
 
 document.addEventListener('DOMContentLoaded', () => {
