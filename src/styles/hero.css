@@ -1,0 +1,117 @@
+/* ── HERO SECTION ── */
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: calc(var(--nav-height) + 4rem);
+    padding-bottom: var(--space-3xl);
+    overflow: hidden;
+}
+
+/* Grid background */
+.hero-grid-bg {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(224, 255, 0, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(224, 255, 0, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse at 30% 50%, black 20%, transparent 70%);
+    -webkit-mask-image: radial-gradient(ellipse at 30% 50%, black 20%, transparent 70%);
+}
+
+/* Glow orbs */
+.hero-glow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    pointer-events: none;
+}
+
+.hero-glow--1 {
+    width: 500px;
+    height: 500px;
+    background: rgba(224, 255, 0, 0.08);
+    top: -10%;
+    left: -5%;
+    animation: glowDrift 8s ease-in-out infinite alternate;
+}
+
+.hero-glow--2 {
+    width: 350px;
+    height: 350px;
+    background: rgba(224, 255, 0, 0.05);
+    bottom: 10%;
+    right: 5%;
+    animation: glowDrift 10s ease-in-out infinite alternate-reverse;
+}
+
+/* Content */
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-headline {
+    font-size: var(--fs-hero);
+    font-weight: var(--fw-semibold);
+    line-height: 1.12;
+    letter-spacing: var(--ls-tight);
+    margin-bottom: var(--space-lg);
+}
+
+.headline-line {
+    display: block;
+    overflow: hidden;
+}
+
+.hero-sub {
+    font-size: var(--fs-lg);
+    color: var(--text-secondary);
+    line-height: var(--lh-relaxed);
+    max-width: 540px;
+    margin-bottom: var(--space-xl);
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+}
+
+/* ── TICKER ── */
+.ticker-wrap {
+    overflow: hidden;
+    padding: var(--space-lg) 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    z-index: 2;
+}
+
+.ticker {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    white-space: nowrap;
+    animation: tickerScroll 25s linear infinite;
+    width: max-content;
+}
+
+.ticker-item {
+    font-family: var(--font-display);
+    font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+    font-weight: var(--fw-bold);
+    letter-spacing: var(--ls-wider);
+    color: var(--text-muted);
+    padding: 0 2rem;
+}
+
+.ticker-sep {
+    color: var(--accent);
+    font-size: 0.5rem;
+    opacity: 0.6;
+}

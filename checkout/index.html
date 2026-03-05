@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Started — Arkon</title>
+    <meta name="description"
+        content="Start building your professional website with Arkon. Fill out the form and we'll get you online." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/img/arkon-icon.svg" />
+    <link rel="stylesheet" href="/src/styles/variables.css" />
+    <link rel="stylesheet" href="/src/styles/reset.css" />
+    <link rel="stylesheet" href="/src/styles/base.css" />
+    <link rel="stylesheet" href="/src/styles/components.css" />
+    <link rel="stylesheet" href="/src/styles/checkout.css" />
+    <link rel="stylesheet" href="/src/styles/responsive.css" />
+</head>
+
+<body>
+    <main class="checkout-page">
+        <div class="checkout-card">
+            <div class="checkout-header">
+                <a href="/" class="checkout-logo" aria-label="Arkon Home">
+                    <img src="/img/arkon-logo.png" alt="Arkon" class="checkout-logo-img" />
+                </a>
+                <h1 class="checkout-title">Let's get you <span class="text-accent">online.</span></h1>
+                <p class="checkout-subtitle">Fill out the form below and continue to payment.</p>
+            </div>
+
+            <form id="checkout-form" class="checkout-form" novalidate>
+                <div class="form-group">
+                    <label for="field-name" class="form-label">Your Name</label>
+                    <input type="text" id="field-name" class="form-input" placeholder="John Smith" autocomplete="name"
+                        required />
+                    <span class="form-error">Please enter your name</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="field-email" class="form-label">Email Address</label>
+                    <input type="email" id="field-email" class="form-input" placeholder="john@example.com"
+                        autocomplete="email" required />
+                    <span class="form-error">Please enter a valid email</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="field-phone" class="form-label">Phone Number</label>
+                    <input type="tel" id="field-phone" class="form-input" placeholder="(555) 123-4567"
+                        autocomplete="tel" required />
+                    <span class="form-error">Please enter your phone number</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="field-business" class="form-label">Business Type</label>
+                    <select id="field-business" class="form-select" required>
+                        <option value="">Select your business type</option>
+                        <option value="restaurant">Restaurant / Café</option>
+                        <option value="gym">Gym / Fitness</option>
+                        <option value="salon">Salon / Barbershop</option>
+                        <option value="retail">Retail Store</option>
+                        <option value="professional">Professional Services</option>
+                        <option value="automotive">Automotive</option>
+                        <option value="health">Healthcare</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <span class="form-error">Please select your business type</span>
+                </div>
+
+                <button type="submit" class="btn-primary checkout-submit">
+                    Continue to Payment <span class="btn-arrow">→</span>
+                </button>
+            </form>
+
+            <div class="checkout-secure">
+                🔒 <span>Secure checkout via Stripe</span>
+            </div>
+
+            <div class="checkout-back">
+                <a href="/">← Back to homepage</a>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="/src/js/checkout.js"></script>
+</body>
+
+</html>

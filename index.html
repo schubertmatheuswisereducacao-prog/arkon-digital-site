@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arkon — Built Smart. Launched Fast.</title>
+  <meta name="description"
+    content="Arkon helps small businesses get online with professionally built websites. $340 to start, $40/month after. Simple, fast, and effective." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="/img/arkon-icon.svg" />
+  <link rel="stylesheet" href="/src/styles/variables.css" />
+  <link rel="stylesheet" href="/src/styles/reset.css" />
+  <link rel="stylesheet" href="/src/styles/base.css" />
+  <link rel="stylesheet" href="/src/styles/animations.css" />
+  <link rel="stylesheet" href="/src/styles/components.css" />
+  <link rel="stylesheet" href="/src/styles/nav.css" />
+  <link rel="stylesheet" href="/src/styles/hero.css" />
+  <link rel="stylesheet" href="/src/styles/sections.css" />
+  <link rel="stylesheet" href="/src/styles/responsive.css" />
+</head>
+
+<body>
+  <!-- Progress Bar -->
+  <div id="progress-bar"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- NAVIGATION                              -->
+  <!-- ═══════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner container">
+      <a href="/" class="nav-logo" aria-label="Arkon Home">
+        <img src="/img/arkon-logo.png" alt="Arkon" class="nav-logo-img" />
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+
+      <a href="/checkout/" class="btn-primary nav-cta" id="nav-cta">
+        Get Started <span class="btn-arrow">→</span>
+      </a>
+
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Panel -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul class="mobile-menu-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="/checkout/" class="btn-primary" style="margin-top: 1rem; justify-content: center;">Get Started <span
+            class="btn-arrow">→</span></a></li>
+    </ul>
+  </div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- HERO                                    -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow hero-glow--1"></div>
+    <div class="hero-glow hero-glow--2"></div>
+
+    <div class="hero-content container">
+      <h1 class="hero-headline">
+        <span class="headline-line"><span>If your business</span></span>
+        <span class="headline-line"><span>isn't online, it</span></span>
+        <span class="headline-line"><span class="text-accent">doesn't exist.</span></span>
+      </h1>
+
+      <p class="hero-sub">
+        We build clean, modern websites that give your business<br />
+        visibility on Google and a professional online presence.
+      </p>
+
+      <div class="hero-actions">
+        <a href="/checkout/" class="btn-primary">
+          Launch Your Site <span class="btn-arrow">→</span>
+        </a>
+        <a href="#services" class="btn-ghost">
+          See Services <span class="btn-arrow">↓</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- TICKER / MARQUEE                        -->
+  <!-- ═══════════════════════════════════════ -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span class="ticker-item">WEBSITES</span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item">LANDING PAGES</span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item">SEO</span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item">GOOGLE VISIBILITY</span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item">MAINTENANCE</span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item">RESPONSIVE DESIGN</span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item">WEBSITES</span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item">LANDING PAGES</span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item">SEO</span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item">GOOGLE VISIBILITY</span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item">MAINTENANCE</span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item">RESPONSIVE DESIGN</span>
+      <span class="ticker-sep">◆</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- PROBLEM SECTION                         -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="section problem-section" id="problem">
+    <div class="container">
+      <div class="problem-grid reveal">
+        <div class="problem-stat">
+          <div class="problem-stat-icon">📊</div>
+          <h2 class="problem-stat-number text-accent">97%</h2>
+          <p class="problem-stat-label">of consumers search online<br />before visiting a local business</p>
+        </div>
+        <div class="problem-content">
+          <span class="section-label">The problem</span>
+          <h3 class="section-title">Your competitors <span class="text-accent">probably don't</span> have a website.
+          </h3>
+          <p class="section-desc">
+            That's your advantage. While they stay invisible, you can be the one
+            customers actually find. A professional website isn't a luxury — it's
+            the bare minimum to compete.
+          </p>
+          <p class="section-desc" style="margin-top: 1rem;">
+            <strong class="text-accent">Built smart. Launched fast.</strong> — That's the Arkon way.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SERVICES                                -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="section" id="services">
+    <div class="container">
+      <span class="section-label reveal">What we do</span>
+      <h2 class="section-title reveal reveal-delay-1">Everything your business needs <span class="text-accent">to exist
+          online.</span></h2>
+      <p class="section-desc reveal reveal-delay-2">Simple, fast, and effective. No fluff, no enterprise complexity.</p>
+
+      <div class="services-grid">
+        <div class="card reveal reveal-delay-1">
+          <div class="icon-box">🎨</div>
+          <h3 class="card-title">Custom Design</h3>
+          <p class="card-desc">Modern, clean visuals tailored to your brand. No generic templates.</p>
+        </div>
+        <div class="card reveal reveal-delay-2">
+          <div class="icon-box">⚡</div>
+          <h3 class="card-title">Fast Development</h3>
+          <p class="card-desc">Your website built and launched in days, not months. Speed matters.</p>
+        </div>
+        <div class="card reveal reveal-delay-3">
+          <div class="icon-box">🔍</div>
+          <h3 class="card-title">SEO Setup</h3>
+          <p class="card-desc">Optimized for Google from day one. Be found by customers searching for you.</p>
+        </div>
+        <div class="card reveal reveal-delay-4">
+          <div class="icon-box">📱</div>
+          <h3 class="card-title">100% Responsive</h3>
+          <p class="card-desc">Perfect on every screen — mobile, tablet, desktop. No exceptions.</p>
+        </div>
+        <div class="card reveal reveal-delay-5">
+          <div class="icon-box">🏗️</div>
+          <h3 class="card-title">Clean Structure</h3>
+          <p class="card-desc">Well-organized code that loads fast and scales with your business.</p>
+        </div>
+        <div class="card reveal reveal-delay-6">
+          <div class="icon-box">🚀</div>
+          <h3 class="card-title">Launch Support</h3>
+          <p class="card-desc">We handle hosting, domain setup, and ongoing maintenance. You just run your business.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- PROCESS                                 -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="section" id="process">
+    <div class="container">
+      <span class="section-label reveal">How it works</span>
+      <h2 class="section-title reveal reveal-delay-1">Four steps. <span class="text-accent">That's it.</span></h2>
+      <p class="section-desc reveal reveal-delay-2">From sign-up to launch, we keep it simple and transparent.</p>
+
+      <div class="process-grid">
+        <div class="process-step reveal reveal-delay-1">
+          <div class="process-number">01</div>
+          <h3 class="process-title">Fill the Form</h3>
+          <p class="process-desc">Tell us about your business in a short form. Prefer a call? We're happy to set one up
+            instead.</p>
+        </div>
+        <div class="process-connector reveal reveal-delay-2"></div>
+        <div class="process-step reveal reveal-delay-2">
+          <div class="process-number">02</div>
+          <h3 class="process-title">Design</h3>
+          <p class="process-desc">We create a custom design based on your brand, audience, and goals.</p>
+        </div>
+        <div class="process-connector reveal reveal-delay-3"></div>
+        <div class="process-step reveal reveal-delay-3">
+          <div class="process-number">03</div>
+          <h3 class="process-title">Build</h3>
+          <p class="process-desc">Your site gets developed with clean code, optimized for speed and SEO.</p>
+        </div>
+        <div class="process-connector reveal reveal-delay-4"></div>
+        <div class="process-step reveal reveal-delay-4">
+          <div class="process-number">04</div>
+          <h3 class="process-title">Launch</h3>
+          <p class="process-desc">We deploy, test, and hand over a fully live website. You're online.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- PORTFOLIO                               -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <span class="section-label reveal">Our work</span>
+      <h2 class="section-title reveal reveal-delay-1">Projects that <span class="text-accent">speak for
+          themselves.</span></h2>
+      <p class="section-desc reveal reveal-delay-2">Every website we build is designed to convert visitors into
+        customers.</p>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-card reveal reveal-delay-1">
+          <div class="portfolio-preview">
+            <div class="portfolio-placeholder">
+              <span class="portfolio-placeholder-icon">☕</span>
+              <span class="portfolio-placeholder-text">Café & Restaurant</span>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3 class="portfolio-name">The Daily Grind</h3>
+            <span class="badge">Coming Soon</span>
+          </div>
+        </div>
+        <div class="portfolio-card reveal reveal-delay-2">
+          <div class="portfolio-preview">
+            <div class="portfolio-placeholder">
+              <span class="portfolio-placeholder-icon">💪</span>
+              <span class="portfolio-placeholder-text">Gym & Fitness</span>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3 class="portfolio-name">IronForge Gym</h3>
+            <span class="badge">Coming Soon</span>
+          </div>
+        </div>
+        <div class="portfolio-card reveal reveal-delay-3">
+          <div class="portfolio-preview">
+            <div class="portfolio-placeholder">
+              <span class="portfolio-placeholder-icon">✂️</span>
+              <span class="portfolio-placeholder-text">Barbershop</span>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h3 class="portfolio-name">Sharp Cuts</h3>
+            <span class="badge">Coming Soon</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- PRICING                                 -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <span class="section-label reveal">Pricing</span>
+      <h2 class="section-title reveal reveal-delay-1">Simple pricing. <span class="text-accent">No surprises.</span>
+      </h2>
+      <p class="section-desc reveal reveal-delay-2">One plan. Everything included. No hidden fees.</p>
+
+      <div class="pricing-card reveal reveal-delay-3">
+        <div class="pricing-header">
+          <span class="pricing-label">Complete Website Package</span>
+          <div class="pricing-amounts">
+            <div class="pricing-main">
+              <span class="pricing-currency">$</span>
+              <span class="pricing-value">340</span>
+              <span class="pricing-period">to get started</span>
+            </div>
+          </div>
+          <p class="pricing-breakdown">$300 setup + first month ($40) included</p>
+          <p class="pricing-after">Then <strong class="text-accent">$40/month</strong> for hosting, maintenance &
+            updates</p>
+        </div>
+
+        <div class="pricing-divider"></div>
+
+        <ul class="pricing-features">
+          <li class="pricing-feature">
+            <span class="pricing-check">✓</span>
+            Custom website design
+          </li>
+          <li class="pricing-feature">
+            <span class="pricing-check">✓</span>
+            Mobile responsive
+          </li>
+          <li class="pricing-feature">
+            <span class="pricing-check">✓</span>
+            SEO optimization
+          </li>
+          <li class="pricing-feature">
+            <span class="pricing-check">✓</span>
+            Google visibility setup
+          </li>
+          <li class="pricing-feature">
+            <span class="pricing-check">✓</span>
+            Hosting & domain included
+          </li>
+          <li class="pricing-feature">
+            <span class="pricing-check">✓</span>
+            Ongoing maintenance & updates
+          </li>
+          <li class="pricing-feature">
+            <span class="pricing-check">✓</span>
+            SSL security certificate
+          </li>
+          <li class="pricing-feature">
+            <span class="pricing-check">✓</span>
+            Speed optimized
+          </li>
+        </ul>
+
+        <a href="/checkout/" class="btn-primary pricing-cta">
+          Get Started Now <span class="btn-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- FINAL CTA                               -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="section cta-section" id="cta">
+    <div class="container">
+      <div class="cta-content reveal">
+        <span class="section-label">Ready?</span>
+        <h2 class="cta-headline">Stop being <span class="text-accent">invisible.</span></h2>
+        <p class="cta-desc">Your customers are searching for you right now. Make sure they find you.</p>
+        <a href="/checkout/" class="btn-primary cta-btn">
+          Launch Your Website <span class="btn-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- FOOTER                                  -->
+  <!-- ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="/" class="footer-logo" aria-label="Arkon Home">
+            <img src="/img/arkon-logo.png" alt="Arkon" class="footer-logo-img" />
+          </a>
+          <p class="footer-tagline">Built smart. Launched fast.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4 class="footer-links-title">Navigation</h4>
+          <a href="#services">Services</a>
+          <a href="#process">Process</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#pricing">Pricing</a>
+        </div>
+
+        <div class="footer-links">
+          <h4 class="footer-links-title">Get in touch</h4>
+          <a href="/checkout/">Get Started</a>
+          <a href="https://www.instagram.com/arkondigital.co/" target="_blank" rel="noopener">Instagram</a>
+          <a href="#" id="footer-terms-link">Terms of Service</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Arkon Digital. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+
+</html>
