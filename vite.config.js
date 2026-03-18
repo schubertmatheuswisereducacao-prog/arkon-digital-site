@@ -9,6 +9,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         checkout: resolve(__dirname, 'checkout/index.html'),
         thankyou: resolve(__dirname, 'thank-you/index.html'),
+        freedemo: resolve(__dirname, 'free-demo/index.html'),
       },
     },
   },

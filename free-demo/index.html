@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Website Demo — Arkon</title>
+    <meta name="description"
+        content="Get a FREE website demo for your business. It's completely free and there is no commitment." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/img/arkon-icon.svg" />
+</head>
+
+<body>
+    <main class="checkout-page">
+        <div class="checkout-card">
+            <div class="checkout-header">
+                <a href="/" class="checkout-logo" aria-label="Arkon Home">
+                    <img src="/img/arkon-logo.png" alt="Arkon" class="checkout-logo-img" />
+                </a>
+                <div style="font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                    <span style="display: block; width: 24px; height: 2px; background: var(--accent);"></span>
+                    Free Demo
+                    <span style="display: block; width: 24px; height: 2px; background: var(--accent);"></span>
+                </div>
+                <h1 class="checkout-title">Get a <span class="text-accent">FREE</span><br>website demo.</h1>
+                <p class="checkout-subtitle">Fill out the form below to request your demo. It’s completely free and there is no commitment.</p>
+            </div>
+
+            <form id="freedemo-form" class="checkout-form" novalidate>
+                <div class="form-group">
+                    <label for="field-business" class="form-label">Business Name</label>
+                    <input type="text" id="field-business" class="form-input" placeholder="e.g. The Daily Grind" required />
+                    <span class="form-error">Please enter your business name</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="field-location" class="form-label">City / State</label>
+                    <input type="text" id="field-location" class="form-input" placeholder="e.g. Austin, TX" required />
+                    <span class="form-error">Please enter your city / state</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="field-description" class="form-label">What your business does</label>
+                    <textarea id="field-description" class="form-input" placeholder="e.g. We're a coffee shop serving specialty drinks and pastries..." style="min-height: 100px; resize: vertical; padding: 1rem;" required></textarea>
+                    <span class="form-error">Please describe your business</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="field-email" class="form-label">Email Address</label>
+                    <input type="email" id="field-email" class="form-input" placeholder="you@example.com"
+                        autocomplete="email" required />
+                    <span class="form-error">Please enter a valid email</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="field-phone" class="form-label">Phone <span style="font-weight: 400; text-transform: none; color: #888; font-size: 0.85em;">(optional)</span></label>
+                    <input type="tel" id="field-phone" class="form-input" placeholder="+1 (555) 000-0000"
+                        autocomplete="tel" />
+                </div>
+
+                <button type="submit" class="btn-primary checkout-submit" style="width: 100%;">
+                    Request my FREE demo <span class="btn-arrow">→</span>
+                </button>
+            </form>
+
+            <div id="freedemo-success" style="display: none; text-align: center; padding: 2rem 0; flex-direction: column; align-items: center; gap: 1rem;">
+                <div style="font-size: 3rem; margin-bottom: 0.5rem; animation: pop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;">✅</div>
+                <h2 class="checkout-title" style="margin-bottom: 0.5rem;"><span class="text-accent">Thank you.</span></h2>
+                <p class="checkout-subtitle" style="margin-bottom: 0;">We will contact you shortly.</p>
+            </div>
+
+            <style>
+                @keyframes pop {
+                    0% { transform: scale(0); opacity: 0; }
+                    100% { transform: scale(1); opacity: 1; }
+                }
+            </style>
+
+            <div class="checkout-back" style="margin-top: 2rem;">
+                <a href="/">← Back to homepage</a>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="/src/js/freedemo.js"></script>
+</body>
+
+</html>
