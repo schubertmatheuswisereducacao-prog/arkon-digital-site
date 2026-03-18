@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thank You — Arkon</title>
+    <title>Welcome to Arkon — Next Steps</title>
     <meta name="description"
         content="Payment confirmed! Your Arkon website is on its way. Fill out the briefing form to get started." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,133 +28,66 @@
                 </div>
             </div>
 
+            <div style="font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                <span style="display: block; width: 24px; height: 2px; background: var(--accent);"></span>
+                Payment confirmed
+                <span style="display: block; width: 24px; height: 2px; background: var(--accent);"></span>
+            </div>
+
             <h1 class="thankyou-title">
-                Payment <span class="text-accent">confirmed.</span>
+                You're almost<br /><span class="text-accent">online.</span>
             </h1>
 
             <p class="thankyou-desc">
-                Your website is officially on its way. We'll start building
-                as soon as you complete the briefing form below.
+                Your payment went through — welcome to Arkon! 🎉<br/>
+                Before we start building, we need to learn about your business. <strong style="color:var(--text);">Your site won't be started until you fill out the form below.</strong>
             </p>
+
+            <div style="width: 100%; height: 1px; background: var(--border); margin-bottom: 2rem;"></div>
 
             <!-- Next steps -->
             <div class="thankyou-steps">
-                <h2 class="thankyou-steps-title">What happens next</h2>
-
-                <div class="thankyou-step">
+                <div class="thankyou-step" style="align-items: flex-start; text-align: left;">
                     <span class="thankyou-step-number">01</span>
-                    <p class="thankyou-step-text">
-                        Accept our <a href="#" id="open-terms">Terms of Service</a> — required before we begin.
-                    </p>
+                    <span style="font-size: 22px; flex-shrink: 0; line-height: 1.2; margin-right: 1rem;">📋</span>
+                    <div>
+                        <div style="font-weight: 600; font-size: 15px; margin-bottom: 4px; color: var(--text);">Fill out the onboarding form</div>
+                        <p class="thankyou-step-text" style="color: var(--text-dim);">Tell us about your business, your goals, and what you'd like on your site. Takes about 5 minutes.</p>
+                    </div>
                 </div>
 
-                <div class="thankyou-step">
+                <div class="thankyou-step" style="align-items: flex-start; text-align: left;">
                     <span class="thankyou-step-number">02</span>
-                    <p class="thankyou-step-text">
-                        Fill out the <strong class="text-accent">detailed briefing form</strong> —
-                        this tells us everything we need about your business.
-                    </p>
+                    <span style="font-size: 22px; flex-shrink: 0; line-height: 1.2; margin-right: 1rem;">✏️</span>
+                    <div>
+                        <div style="font-weight: 600; font-size: 15px; margin-bottom: 4px; color: var(--text);">We design your site</div>
+                        <p class="thankyou-step-text" style="color: var(--text-dim);">Once we receive your form, we'll start building a custom design. You'll get to review it before anything goes live.</p>
+                    </div>
                 </div>
 
-                <div class="thankyou-step">
+                <div class="thankyou-step" style="align-items: flex-start; text-align: left;">
                     <span class="thankyou-step-number">03</span>
-                    <p class="thankyou-step-text">
-                        Our team reviews your responses and starts designing your website.
-                    </p>
-                </div>
-
-                <div class="thankyou-step">
-                    <span class="thankyou-step-number">04</span>
-                    <p class="thankyou-step-text">
-                        You'll receive a preview to review before we go live. Simple as that.
-                    </p>
+                    <span style="font-size: 22px; flex-shrink: 0; line-height: 1.2; margin-right: 1rem;">🚀</span>
+                    <div>
+                        <div style="font-weight: 600; font-size: 15px; margin-bottom: 4px; color: var(--text);">Go live</div>
+                        <p class="thankyou-step-text" style="color: var(--text-dim);">After your approval, we launch. Your business starts showing up where customers are searching.</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- Terms checkbox + form button -->
+            <!-- Form button -->
             <div class="thankyou-actions">
-                <div class="terms-accept" id="terms-accept">
-                    <label class="terms-label">
-                        <input type="checkbox" id="terms-checkbox" class="terms-checkbox" />
-                        <span class="terms-checkmark"></span>
-                        <span class="terms-text">I have read and accept the <a href="#" id="terms-link">Terms of
-                                Service</a></span>
-                    </label>
-                </div>
-
-                <a href="https://forms.gle/L9p4CeeN25Ssmw7K7" target="_blank" rel="noopener"
-                    class="btn-primary thankyou-form-btn" id="form-btn" aria-disabled="true">
-                    Fill Out Briefing Form <span class="btn-arrow">→</span>
+                <a href="https://forms.gle/vdk9MX1vp6zPAZZu6" target="_blank" rel="noopener"
+                    class="btn-primary thankyou-form-btn" id="form-btn" style="opacity: 1; pointer-events: all; width: 100%;">
+                    📋 Fill Out the Form Now <span class="btn-arrow">→</span>
                 </a>
-                <p class="terms-hint" id="terms-hint">Please accept the Terms of Service first</p>
-                <a href="/" class="thankyou-home">← Back to Arkon</a>
+                <p class="terms-hint" style="display: block; opacity: 1; text-align: center; font-size: 12px; color: var(--text-dim); margin-top: 1rem;">
+                    Questions? Reach us at <a href="mailto:arkon.adm@gmail.com" style="color: #777; text-decoration: underline;">arkon.adm@gmail.com</a> or on <a href="https://wa.me/5511970795550" target="_blank" style="color: #777; text-decoration: underline;">WhatsApp</a>.
+                </p>
+                <a href="/" class="thankyou-home" style="margin-top: 1.5rem;">← Back to Arkon</a>
             </div>
         </div>
     </main>
-
-    <!-- ═══════════════════════════════════════ -->
-    <!-- TERMS OF SERVICE MODAL                  -->
-    <!-- ═══════════════════════════════════════ -->
-    <div class="terms-modal" id="terms-modal">
-        <div class="terms-modal-overlay" id="terms-modal-close-overlay"></div>
-        <div class="terms-modal-content">
-            <div class="terms-modal-header">
-                <h2 class="terms-modal-title">Terms of Service</h2>
-                <button class="terms-modal-close" id="terms-modal-close">&times;</button>
-            </div>
-            <div class="terms-modal-body">
-                <div class="terms-section">
-                    <h3>English Version</h3>
-                    <div class="terms-item"><strong>1. Payment Terms</strong><br>A total of $340 is charged upfront,
-                        including a $300 setup fee and the first $40 monthly subscription payment. After that, $40/month
-                        will be automatically charged.</div>
-                    <div class="terms-item"><strong>2. No Refund Policy</strong><br>All payments are non-refundable.
-                    </div>
-                    <div class="terms-item"><strong>3. Subscription & Cancellation</strong><br>The client may cancel the
-                        subscription at any time. Upon cancellation or failed payment, the website will be taken
-                        offline.</div>
-                    <div class="terms-item"><strong>4. Ownership</strong><br>The website remains the property of ARKON.
-                        The client is granted usage rights only while the subscription is active.</div>
-                    <div class="terms-item"><strong>5. Start of Production</strong><br>Production begins only after
-                        payment confirmation and complete form submission.</div>
-                    <div class="terms-item"><strong>6. Revisions</strong><br>The project includes one round of
-                        revisions.</div>
-                    <div class="terms-item"><strong>7. Maintenance</strong><br>Hosting, maintenance, and minor updates
-                        are included while the subscription remains active.</div>
-                    <div class="terms-item"><strong>8. Limitation of Liability</strong><br>ARKON is not responsible for
-                        third-party outages, hosting issues, or business revenue loss.</div>
-                    <div class="terms-item"><strong>9. Governing Law</strong><br>This agreement is governed by Brazilian
-                        law. Any disputes shall be resolved exclusively in Brazil.</div>
-                </div>
-
-                <div class="terms-divider"></div>
-
-                <div class="terms-section">
-                    <h3>Versão em Português</h3>
-                    <div class="terms-item"><strong>1. Termos de Pagamento</strong><br>Um total de $340 é cobrado no
-                        início, incluindo $300 de taxa inicial e $40 referentes ao primeiro mês da assinatura. Após
-                        isso, $40/mês serão cobrados automaticamente.</div>
-                    <div class="terms-item"><strong>2. Política de Reembolso</strong><br>Todos os pagamentos são não
-                        reembolsáveis.</div>
-                    <div class="terms-item"><strong>3. Assinatura e Cancelamento</strong><br>O cliente pode cancelar a
-                        assinatura a qualquer momento. Após o cancelamento ou falha de pagamento, o site será retirado
-                        do ar.</div>
-                    <div class="terms-item"><strong>4. Propriedade</strong><br>O site permanece propriedade da ARKON. O
-                        cliente possui direito de uso apenas enquanto a assinatura estiver ativa.</div>
-                    <div class="terms-item"><strong>5. Início da Produção</strong><br>A produção começa somente após a
-                        confirmação do pagamento e envio completo do formulário.</div>
-                    <div class="terms-item"><strong>6. Revisões</strong><br>O projeto inclui uma rodada de revisão.
-                    </div>
-                    <div class="terms-item"><strong>7. Manutenção</strong><br>Hospedagem, manutenção e pequenas
-                        atualizações estão incluídas enquanto a assinatura estiver ativa.</div>
-                    <div class="terms-item"><strong>8. Limitação de Responsabilidade</strong><br>A ARKON não se
-                        responsabiliza por falhas de terceiros, problemas de hospedagem ou perdas financeiras.</div>
-                    <div class="terms-item"><strong>9. Legislação Aplicável</strong><br>Este contrato é regido pela
-                        legislação brasileira. Quaisquer disputas serão resolvidas exclusivamente no Brasil.</div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <script type="module" src="/src/js/thankyou.js"></script>
 </body>
